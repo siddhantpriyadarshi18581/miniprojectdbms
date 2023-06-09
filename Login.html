@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Login And Registration Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/logistyle.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="hero">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                    <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                </div>
+                <div class="social-icons">
+                    <img src="instagram.jpg">
+                    <img src="gmail.jpg">
+                    <img src="facebook.jpg">
+                </div>
+                <form action="login.php" method="post"  id="Login"  class="input-group" >
+                    <input type="text" class="input-field" placeholder="Enter Username" name="username"
+                    required>
+                    <input type="password" class="input-field" placeholder="Enter Your Password" name="password"
+                    required>
+                    <input type="checkbox" class="check-box"><span>Remember Password</span>
+                    <button type="submit" class="submit-btn" name="login_user" value="Log In">Log In</button>
+                </form>
+                <form action="details_entry.php" method="post" id="Register"  class="input-group">
+                    <input type="text" class="input-field" placeholder="Enter Username" name="username"
+                    required>
+                    <input type="text" class="input-field" placeholder="Enter Email-Id" name="email"
+                    required>
+                    <input type="text" class="input-field" placeholder="Enter Phone-Number" name="phone"
+                    required>
+                    <input type="text" class="input-field" placeholder="Enter Address" name="address"
+                    required>
+                    <input type="text" class="input-field" placeholder="Enter Date of Birth" name="dob"
+                    required>
+                    <label id="Class" class="Bride">Select whether you are Male or Female</label>
+                    <input type="radio" id="Bride" name="gender" value="male"><label class="radio-text" >Male</label>
+                    <input type="radio" id="Groom" name="gender" value="female"><label class="radio-text" >Female</label>
+                    <input type="password" class="input-field" placeholder="Enter Your Password" name="password"
+                    required>
+                    <input type="checkbox" class="check-box" required><span>I Agree to the Terms & Conditions</span>
+                    <button type="submit" name="save" class="submit-btn" value="Register">Register</button>
+                    
+                    
+                </form>
+            </div>
+            
+        </div>
+        
+        <script src="login.js">
+        </script>
+    </body>
+</html>
